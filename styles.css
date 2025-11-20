@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url(https://png.pngtree.com/png-vector/20190504/ourlarge/pngtree-headphone-icon-design-template-vector-png-image_1020052.jpg); */
+  height: 125vh;
+}
+/* chỉnh 2 hộp ở 2 bên góc */
+.navbar {
+    display: flex;
+    padding: 20px 100px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+/* Chỉnh thằng navlinks */
+.navlinks a {
+    font-size: 18px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 300ms;
+} 
+.navlinks .Home:hover {
+    font-size: 22px;
+}
+.navlinks .Product:hover {
+    font-size: 22px;
+}
+.navlinks .About-Us:hover {
+    font-size: 22px;
+}
+.navlinks .Features:hover {
+    font-size: 22px;
+}
+.navlinks button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(9, 8, 8, 0.799);
+    color: white;
+    font-size: 16px;
+    transition: 300ms;
+}
+.navlinks button:hover {
+    opacity: 80%;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Chỉnh thằng HeadPhone cho có pointer */
+.navbar .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center; /* Có thằng này để ngay hàng thẳng lối */ 
+    transition: 300ms;
+}
+.navbar .logo:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Header của web */
+.content {
+    margin-left: 14.5%;
+    margin-top: 85px;
+}
+.content h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content span {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Custom đường kẻ ngang */
+.content hr {
+    width: 30%;
+    height: 4px;
+    background-color: rgb(0, 76, 255);
+    border-color: rgba(0, 115, 255, 0.65);
+    margin-left: 50px;
+    margin-top: 10px;
+}
+/* Custom chút đoạn văn bản */
+.content p {
+    width: 55ch;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #555;
+}
+/* Chỉnh nút Read More */
+.content button {
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(9, 8, 8, 0.799);
+    color: white;
+    transition: 300ms;
+    box-shadow: -6px -0px 4px rgb(0,0,0,0.2);
+}
+.content button:hover {
+    cursor: pointer;
+    opacity: 80%;
+    font-size: 20px;
+    padding: 17px;
+}
+main {
+    display: flex;
+}
+.img img {
+    height: 500px;
+}
+/* Custom footer nè*/
+footer {
+    padding: 100px 100px;
+    background-color: rgba(0, 0, 0, 0.854);
+    align-items: center;
+}
+.footerlinks {
+    display: flex;
+    padding-left: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerlinks p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    line-height: 0.5;
+    color: rgb(178, 176, 176);
+}
+.footerlinks p:hover {
+    color: rgb(64, 97, 187);
+    cursor: pointer;
+}
+.footerlinks .title:hover {
+    color: rgb(60, 106, 232);
+    cursor: pointer;
+}
+.footerlinks .title {
+    color: rgb(81, 105, 170);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer hr {
+    border-color: rgb(185, 185, 185);
+    margin-top: 30px;
+}
+/* Responsive website */
+@media (max-width: 500px){
+    .navbar {
+        padding: 15px 10px 10px;
+    }
+}
