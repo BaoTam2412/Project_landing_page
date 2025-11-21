@@ -279,5 +279,33 @@ footer hr {
     height: 300px;
   }
 }
-
-
+/* Add animation cho website */
+/* Animation từ trái sang phải */
+@keyframes surf_left_right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 1%;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.content h1, span, hr, p, .btn-content {
+  animation: surf_left_right 2s;
+}
+ .content span {
+  display: inline-block;
+}
+/* Animation từ phải sang trái */
+@keyframes surf_right_left {
+  0% {
+    transform: translateX(100px);
+    opacity: 1%;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.img img {
+  animation: surf_right_left 2s;
+}
