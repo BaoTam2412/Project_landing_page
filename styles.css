@@ -290,7 +290,7 @@ footer hr {
     transform: translateX(0px);
   }
 }
-.content h1, span, hr, p, .btn-content {
+.content h1, .content span, .content hr, .content p, .btn-content {
   animation: surf_left_right 2s;
 }
  .content span {
@@ -309,3 +309,4 @@ footer hr {
 .img img {
   animation: surf_right_left 2s;
 }
+
