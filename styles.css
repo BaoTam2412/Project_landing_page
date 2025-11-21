@@ -257,8 +257,17 @@ footer hr {
     line-height: 1.1;
   }
 }
-/* Thêm responsive cho đt có màn nhỏ <= 475px */
-@media (max-width: 475px) {
+/* Thêm responsive cho đt */
+@media (max-width: 475px){
+  .content p {
+    width: 40ch;
+    font-size: 16px;
+  }
+  .img img {
+    height: 400px;
+  }
+}
+@media (max-width: 400px){
   .navlinks .active {
     display: none;
   }
@@ -270,4 +279,5 @@ footer hr {
     height: 300px;
   }
 }
+
 
